@@ -35,6 +35,5 @@ User Interface Design:
 ![image](https://github.com/SamCull/UI-UX/assets/72495319/74051f95-9dcb-4794-99b5-90206b0254e5)
 
 ## Contact
-Sam Cullen - C00250093
-SETU Carlow
+Sam Cullen - C00250093 - SETU Carlow
 

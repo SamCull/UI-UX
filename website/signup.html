@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Signup Form | CodingLab </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="header">
+                <div class="welcome">Signup</div>
+                <img class="logo" src="assets/logo.png" alt="Logo">
+              </div>
+            <div class="input-box">
+                <input type="text" placeholder="Choose a Username" >
+                <div class="underline"></div>
+            </div>
+            <div class="input-box underline">
+                <input type="email" placeholder="Enter Your Email" >
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Create a Password" >
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Your Password" >
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button">
+                <input type="button" value="Register" id="registerBtn">
+
+            </div>
+        </form>
+        <div class="option">or Connect With Social Media</div>
+        <div class="social-media">
+            <div class="twitter">
+                <a href="#"><i class="fab fa-twitter"></i>Sign up With Twitter</a>
+            </div>
+            <div class="facebook">
+                <a href="#"><i class="fab fa-facebook-f"></i>Sign up With Facebook</a>
+            </div>
+            <i> Already have an account?</i><br>
+            <div class="login">
+                <a href="index.html">
+                  <div class="fas fa-user"> Login
+        </div>
+    </div>
+    <script>
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            window.location.href = 'pNumber.html';
+        });
+        </script>
+        
+</body>
+</html>

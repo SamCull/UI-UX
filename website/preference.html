@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Preferences | Your Dating App Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="welcome">Select Your Preferences</div>
+            <img class="logo" src="assets/logo.png" alt="Logo">
+        </div>
+        <div class="input-box">
+            <select name="gender" required>
+                <option value="" disabled selected>Select your preference</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Prefer not to say</option>
+                <!-- Add more options as necessary -->
+            </select>
+            <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+            <input type="button" value="Continue" id="continueBtn">
+        </div>
+        <i>Already have an account?</i><br>
+        <div class="login">
+            <a href="index.html">
+                <div class="fas fa-user"> Login</div>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('continueBtn').addEventListener('click', function() {
+            var selectedPreferences = Array.from(document.getElementById('preference').selectedOptions).map(option => option.value);
+            console.log(selectedPreferences); // For debugging, to see selected preferences. Remove or replace with your actual navigation logic.
+             window.location.href = 'slides.html'; // Uncomment and update this line as needed for navigation.
+        });
+    </script>
+</body>
+</html>

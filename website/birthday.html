@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Birthday | Your Dating App Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <form action="nextStep.html" method="POST"> <!-- Update action to your next step -->
+            <div class="header">
+                <div class="welcome">Enter Your Birthday</div>
+                <img class="logo" src="assets/logo.png" alt="Logo">
+            </div>
+            <div class="input-box">
+                <input type="date" name="birthday" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button">
+                <input type="button" value="Continue" id="continueBtn">
+            </div>
+        </form>
+        <div class="option">or Connect With Social Media</div>
+        <div class="social-media">
+            <div class="twitter">
+                <a href="#"><i class="fab fa-twitter"></i>Sign up With Twitter</a>
+            </div>
+            <div class="facebook">
+                <a href="#"><i class="fab fa-facebook-f"></i>Sign up With Facebook</a>
+            </div>
+        </div>
+        <i>Already have an account?</i><br>
+        <div class="login">
+            <a href="index.html">
+              <div class="fas fa-user"> Login</div>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('continueBtn').addEventListener('click', function() {
+            window.location.href = 'gender.html'; // Update this as needed
+        });
+    </script>
+</body>
+</html>

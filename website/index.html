@@ -25,8 +25,8 @@
           <div class="underline"></div>
         </div>
         <div class="input-box button">
-          <input type="submit" name="" value="Continue">
-        </div>
+          <input type="button" value="Continue" id="continueBtn">
+      </div>
       </form>
         <div class="option">or Connect With Social Media</div>
         <div class="twitter">
@@ -41,5 +41,12 @@
               <div class="fas fa-user-plus"></i> Sign up
 
     </div>
+    <script>
+      document.getElementById('continueBtn').addEventListener('click', function() {
+          // var selectedPreferences = Array.from(document.getElementById('preference').selectedOptions).map(option => option.value);
+          // console.log(selectedPreferences); // For debugging, to see selected preferences. Remove or replace with your actual navigation logic.
+           window.location.href = 'profileCard.html'; // Uncomment and update this line as needed for navigation.
+      });
+  </script>
   </body>
 </html>

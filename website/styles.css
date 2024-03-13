@@ -130,6 +130,7 @@ html, body {
 .container .twitter a {
   background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
   margin: 20px 0 15px 0;
+  width: 220px;
 }
 .container .twitter a:hover {
   background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
@@ -138,6 +139,7 @@ html, body {
 .container .facebook a {
   background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
   margin: 20px 0 50px 0;
+  width: 220px;
 }
 .container .facebook a:hover {
   background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
@@ -161,6 +163,7 @@ html, body {
 .logo {
   max-height: 130px; /* Adjust the size of the logo */
   width: auto; /* Keep the logo's aspect ratio */
+  margin-left: 40px;
   /* Add other styles for the logo here */
 }
 

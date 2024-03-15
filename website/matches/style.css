@@ -317,7 +317,7 @@ body {
 
 .chatbox {
     background-color: #f7f7f7; /* Light grey background */
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 8px; /* Rounded corners for the chatbox */
 }
 
@@ -325,6 +325,7 @@ body {
     display: flex;
     align-items: flex-end;
     margin-bottom: 10px;
+	font-style: italic;
 }
 
 .message .avatar img {
@@ -335,10 +336,11 @@ body {
 }
 
 .message .bubble {
+	margin-top: 25px;
     padding: 12px 20px;
     border-radius: 20px; /* Rounded corners for the chat bubble */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 70%;
+    max-width: none;
 }
 
 .message.left .bubble {
@@ -346,21 +348,21 @@ body {
 }
 
 .message.right .bubble {
-    background-color: #007bff; /* Blue color for the receiver */
+    background-color: #88b7ea; /* Blue color for the receiver */
     color: white;
 }
 
 .message .text {
+	font-size: 1.2rem;
     font-family: 'Roboto', sans-serif; /* Stylish font */
 }
 
-.subscriptionFrame {
-	display: none; /* Initially hide the iframe */
-	width: 100%; /* Set iframe width */
-	height: 100vh; /* Set iframe height */
-	position: fixed; /* Fix position to cover the screen */
-	top: 0;
-	left: 0;
-	border: none; /* Optional: removes the border */
-	z-index: 10; /* Make sure it's above other content */
+.message .timestamp {
+    color: #000000;
+	display: block;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+	text-align: left;
+	opacity: 1.7;
+
 }

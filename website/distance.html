@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Distance Range | Your Dating App Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include your existing styles here -->
+    <style>
+        body    {
+        background: linear-gradient(to right, #d16a93 0%, #c7319e 100%);
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <form action="nextStep.html" method="POST">
+            <div class="header">
+                <div class="welcome">Select Your Distance Range</div>
+                <img class="logo" src="assets/logo.png" alt="Logo">
+            </div>
+            <div class="range_container">
+                <div class="sliders_control">
+                    <input id="fromDistance" type="range" value="1" min="1" max="100" class="distance-slider"/><br><br>
+                    <input id="toDistance" type="range" value="10" min="1" max="100" class="distance-slider"/>
+                </div>
+                <div class="form_control">   
+                    <div class="form_control_container">
+                        <label for="fromDistance">Minimum Distance: <span id="minDistance">1</span> km</label><br><br>
+                        <label for="toDistance">Maximum Distance: <span id="maxDistance">50+</span> km</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box button">
+                <input type="button" value="Continue" id="continueBtn">
+            </div>
+        </form>
+        <i>Already have an account?</i><br>
+        <div class="login">
+            <a href="index.html">
+                <div class="fas fa-user"> Login</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('continueBtn').addEventListener('click', function() {
+            window.location.href = 'gender.html'; // Update with the correct link
+        });
+        
+        const fromDistance = document.getElementById('fromDistance');
+        const toDistance = document.getElementById('toDistance');
+        const minDistance = document.getElementById('minDistance');
+        const maxDistance = document.getElementById('maxDistance');
+    
+        function updateDistanceDisplay() {
+            minDistance.textContent = fromDistance.value;
+            maxDistance.textContent = toDistance.value;
+        }
+    
+        // Add event listeners for the range inputs
+        fromDistance.addEventListener('input', function() {
+            if (parseInt(fromDistance.value) > parseInt(toDistance.value) - 1) {
+                fromDistance.value = parseInt(toDistance.value) - 1;
+            }
+            updateDistanceDisplay();
+        });
+    
+        toDistance.addEventListener('input', function() {
+            if (parseInt(toDistance.value) < parseInt(fromDistance.value) + 1) {
+                toDistance.value = parseInt(fromDistance.value) + 1;
+            }
+            updateDistanceDisplay();
+        });
+    
+        // Initial setup call
+        updateDistanceDisplay();
+    </script>
+</body>
+</html>

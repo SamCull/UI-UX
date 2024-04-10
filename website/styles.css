@@ -161,7 +161,7 @@ html, body {
 }
 
 .logo {
-  max-height: 130px; /* Adjust the size of the logo */
+  max-height: 160px; /* Adjust the size of the logo */
   width: auto; /* Keep the logo's aspect ratio */
   margin-left: 40px;
   /* Add other styles for the logo here */
@@ -181,4 +181,45 @@ html, body {
 .container form select[multiple]:focus {
   outline: none;
   border-color: #ff0080; /* Highlight color when focused */
+}
+
+
+
+
+.premium-upgrade {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #d1d1d1; 
+  border-radius: 5px;
+}
+
+.premium-upgrade p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.upgrade-button {
+  display: inline-block;
+  background-color: #ffe54f;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Initial box-shadow for subtle depth; adjust as needed */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.upgrade-button i {
+  margin-right: 5px;
+}
+
+.upgrade-button:hover {
+  /* Scale the button slightly larger */
+  transform: scale(1.05);
+  /* Add a more prominent shadow on hover */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }

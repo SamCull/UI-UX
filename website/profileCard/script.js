@@ -6,8 +6,8 @@ const dislike = document.querySelector('#dislike');
 // constants
 const urls = [
   // 'assets/profilePics/woman1.png',
-  'https://randomuser.me/api/portraits/women/1.jpg',
   'https://randomuser.me/api/portraits/women/11.jpg',
+  'https://randomuser.me/api/portraits/women/12.jpg',
   'https://randomuser.me/api/portraits/women/23.jpg',
   'https://randomuser.me/api/portraits/women/49.jpg',
   'https://randomuser.me/api/portraits/women/50.jpg',
@@ -18,9 +18,9 @@ const urls = [
   'https://randomuser.me/api/portraits/women/29.jpg',
   'https://randomuser.me/api/portraits/women/30.jpg',
   'https://randomuser.me/api/portraits/women/31.jpg',
-  'https://randomuser.me/api/portraits/women/29.jpg',
-  'https://randomuser.me/api/portraits/women/30.jpg',
-  'https://randomuser.me/api/portraits/women/31.jpg',
+  'https://randomuser.me/api/portraits/women/13.jpg',
+  'https://randomuser.me/api/portraits/women/14.jpg',
+  'https://randomuser.me/api/portraits/women/15.jpg',
 
 
 /*

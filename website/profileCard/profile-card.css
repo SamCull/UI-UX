@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);    width: 100vw;
+    background: linear-gradient(135deg, #FFC0CB, #9B59B6 100%);    width: 100vw;
     height: 100vh;
     overflow: hidden;
   }
@@ -83,7 +83,7 @@
 button {
   font-size: 18px;
   color: #ffffff;
-  background-color: #fc2649; /* Color that matches the background gradient */
+  background-color: #9c20cc; /* Color that matches the background gradient */
   border: none;
   border-radius: 25px;
   padding: 12px 30px;

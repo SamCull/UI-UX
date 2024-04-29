@@ -6,6 +6,13 @@ GitHub repository for UI / UX
 ## Description
 Applying principles of UI/UX design, considering usability, accessibility, and overall user satisfaction for the project.
 
+## Demo Video
+
+
+https://github.com/SamCull/UI-UX/assets/72495319/b83eff07-e144-4bf7-aa90-d6dbf8ccd5ed
+
+
+
 ## Technologies Used
 Showcasing the technologies, tools, and libraries used in the design process.
 - Figma for mockups
